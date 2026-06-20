@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  document-api:
+    image: cloud-document-service:latest
+    environment:
+      DB_HOST: postgres
+      DB_USER: admin
+      DB_PASSWORD: DocumentDBPass123
+      JWT_SECRET: document_jwt_secret
